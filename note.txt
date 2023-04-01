@@ -1,0 +1,26 @@
+
+
+main account---
+CREATE TABLE `awp`.`createaccount` (
+`fname` VARCHAR( 50 ) NOT NULL ,
+`lname` VARCHAR( 50 ) NOT NULL ,
+`username` VARCHAR( 50 ) NOT NULL ,
+`email` VARCHAR( 50 ) NOT NULL ,
+`password` VARCHAR( 50 ) NOT NULL ,
+`datetime` TIMESTAMP NOT NULL
+) ENGINE = MYISAM ;
+
+
+main account query----
+INSERT INTO `awp`.`createaccount` (
+`fname` ,
+`lname` ,
+`username` ,
+`email` ,
+`password` ,
+`datetime`
+)
+VALUES (
+'demo', 'demo', 'demo123', 'demo@gmail.com', '12345',
+CURRENT_TIMESTAMP
+);
